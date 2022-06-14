@@ -74,13 +74,12 @@ public class HelloApplication extends Application {
     void displayClothes(DBConnect connection, VBox root, List <clothes> clothes)  {
         root.getChildren().clear();
         System.out.println(root.getChildren().getClass());
-        Label lbhId = new Label("ID");
-
-        Label lbhName = new Label("Name");
-        Label lbhImg = new Label("Img");
-        Label lbhSize = new Label("Size");
-        Label lbhPrice = new Label("Price");
-        root.getChildren().add(new HBox(lbhId, lbhName, lbhSize, lbhImg, lbhPrice));
+//        Label lbhId = new Label("ID");
+//        Label lbhName = new Label("Name");
+//        Label lbhImg = new Label("Img");
+//        Label lbhSize = new Label("Size");
+//        Label lbhPrice = new Label("Price");
+//        root.getChildren().add(new HBox(lbhId, lbhName, lbhSize, lbhImg, lbhPrice));
         for (int i = 0; i < clothes.size(); i++) {
             final int finialI = i;
             HBox clothesBox = new HBox();
